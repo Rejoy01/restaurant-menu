@@ -1,0 +1,15 @@
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
+}
+
+.menu-btn {
+    border-color: #ffc107 !important; /* Gold border */
+    color: #ffc107 !important; /* Gold text */
+    font-weight: bold;
+  }
+  
+  .menu-btn:hover, .menu-btn.active {
+    background-color: #ffc107 !important; /* Gold background */
+    color: #155724 !important; /* Dark green text */
+    border-color: #ffffff !important; /* White border */
+  }
