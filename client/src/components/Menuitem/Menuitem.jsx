@@ -3,7 +3,7 @@ import React from "react";
 const Menuitem = ({index , item}) => {
   return (
     <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
-      <div className="card shadow-sm">
+      <div className="card shadow-sm ">
         <img
           src={item.image}
           className="card-img-top"

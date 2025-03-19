@@ -14,10 +14,9 @@ const Homepage = () => {
         : menuData.find(category => category.category === selectedCategory)?.items || [];
   
     return (
-        <div className="container py-5"
-         style={{ backgroundImage: "url('/images/banana_leaf.jpg')", backgroundSize: "cover", borderRadius: "10px" }}>
+        <div className="container py-5 homepage-container" style={{ backgroundImage: "url('/images/BGIMAGE.jpg')", backgroundSize: "cover", borderRadius: "10px" }}>
     
-        <h1 className="text-center mb-4 text-light fw-bold text-shadow">Kerala Style Restaurant Menu</h1>
+        <h1 className="text-center mb-4 text-light fw-bold text-shadow heading-font">Kerala Style Restaurant Menu</h1>
         
         <div className="d-flex flex-wrap justify-content-center mb-4">
           <div className="w-100 d-flex justify-content-center mb-2">
@@ -43,12 +42,14 @@ const Homepage = () => {
             )) }
           </div>
         </div>
-        
-        <div className="row">
+        <div className="container" >
+        <div className="row" >
           {filteredMenu.map((item, idx) => (
             <Menuitem key={idx} item = {item} index ={idx} />
           ))}
         </div>
+        </div>
+        
       </div>
     );
 }
