@@ -1,15 +1,49 @@
 .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
 }
+.heading-font{
+    font-family: 'Cinzel Decorative', cursive;
+}
 
 .menu-btn {
-    border-color: #ffc107 !important; /* Gold border */
-    color: #ffc107 !important; /* Gold text */
-    font-weight: bold;
+    background-color:rgba(42, 147, 79, 0.7); /* Deep Kerala Green */
+  color: white; /* Text stays visible */
+  border: none;
+  font-family: 'Cinzel Decorative', cursive;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
   }
   
   .menu-btn:hover, .menu-btn.active {
-    background-color: #ffc107 !important; /* Gold background */
-    color: #155724 !important; /* Dark green text */
+    background-color: #17502d !important; /* Gold background */
+    color: #f7f7f7 !important; /* Dark green text */
     border-color: #ffffff !important; /* White border */
+  }
+
+  .menu-container {
+    /* background-image: url(""); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .homepage-container {
+      background-size: cover; /* Adjust for mobile */
+      background-position: center center;
+      min-height: 100vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .homepage-container {
+      background-size: cover; /* Adjust for mobile */
+      background-position: center center;
+      min-height: 100vh;
+    }
   }
